@@ -1,0 +1,174 @@
+html{
+  position: relative;
+  overflow: hidden;
+}
+body{
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-weight: 600;
+}
+
+input{
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 2px white solid;
+}
+
+input::placeholder{
+  padding-left: 10px;
+  color: white;
+  opacity: 0.5;
+}
+
+.hidden{
+  display: none;
+}
+
+#main-container{
+  text-align: center;
+  min-width: 100%;
+}
+
+#main-container #login-form input{
+  margin: 0 20px 50px 0;
+}
+
+#main-container #login-form button{
+  padding: 3px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+}
+
+#main-container #login-form button:hover{
+  background: black;
+  color: white;
+}
+
+#main-container #todo-form input{
+  position: relative;
+  margin-bottom: 5px;
+}
+
+#main-container #todo-list{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#main-container #todo-list li button{
+  font-size: 14px;
+  margin-left: 10px;
+  border-radius: 1px;
+  background: white;
+}
+
+#main-container #todo-list li button:hover{
+  background: black;
+}
+
+#quote{
+  position: absolute;
+  bottom: 2%; left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 12px;
+}
+
+#weather-container{
+  margin: 0 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#location{
+  font-size: 14px;
+}
+
+#weather img{
+  width: 40px;
+  float: left;
+}
+
+#weather span{
+  display: block;
+  float: left;
+  line-height: 2.5;
+}
+
+
+/* -------------- 미디어쿼리 ----------------- */
+
+@media screen and (max-width:500px) {
+  #main-container #clock{
+    font-size: 70px;
+  }
+  #main-container #login-form{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  #main-container #greeting{
+    font-size: 25px;
+  }
+  #main-container #todo-form{
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  #main-container #todo-form input{
+    width: 300px;
+  }
+  #main-container #todo-list li{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:1200px){
+  #main-container #clock{
+    font-size: 100px;
+  }
+  #main-container #login-form{
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  #main-container #greeting{
+    font-size: 30px;
+  }
+  #main-container #todo-form{
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  #main-container #todo-form input{
+    width: 350px;
+  }
+  #main-container #todo-list li{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  #main-container #clock{
+    font-size: 130px;
+  }
+  #main-container #login-form{
+    margin-top: 50px;
+    font-size: 22px;
+  }
+  #main-container #greeting{
+    font-size: 35px;
+  }
+  #main-container #todo-form{
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  #main-container #todo-form input{
+    width: 410px;
+  }
+  #main-container #todo-list li{
+    font-size: 20px;
+  }
+}

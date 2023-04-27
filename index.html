@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Momentum</title>
+    <script src="https://kit.fontawesome.com/ae7346a422.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="main-container" class="pos-center">
+      <h2 id="clock">00:00:00</h2>
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?">
+        <button>Log In</button>
+      </form>
+      <h1 class="hidden" id="greeting"></h1>
+      <form id="todo-form">
+        <input 
+          required type="text"
+          maxlength="30"
+          placeholder="What is your main focus for today? (max 6)">
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+    <div id="quote">
+      <span></span>
+    </div>
+    <div id="weather-container">
+      <div id="location">
+        <i></i>
+        <span></span>
+      </div>
+      <div id="weather">
+        <img></img>
+        <span></span>
+      </div>
+    </div>
+    <script src="js/key.js"></script>
+    <script src="js/greeting.js" type="module"></script>
+    <script src="js/clock.js" type="module"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
