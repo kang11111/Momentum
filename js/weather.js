@@ -1,3 +1,4 @@
+/**key.js에 있음 */
 const API_KEY = config.apiKey;
 
 function onGeoSuccess(position){
