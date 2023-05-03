@@ -82,6 +82,10 @@ input::placeholder{
   color: white;
 }
 
+#main-container #todo-list li button i{
+  pointer-events: none;
+}
+
 #quote{
   position: absolute;
   bottom: 2%; left: 50%;
