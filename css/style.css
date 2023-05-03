@@ -10,6 +10,10 @@ body{
   background-position: center;
   color: white;
   font-weight: 600;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 input{
@@ -30,6 +34,8 @@ input::placeholder{
 }
 
 #main-container{
+  z-index: 100;
+  position: absolute;
   text-align: center;
   min-width: 100%;
 }
@@ -62,6 +68,7 @@ input::placeholder{
 }
 
 #main-container #todo-list li button{
+  font-size: 14px;
   margin-left: 10px;
   padding: 0 3px;
   border-radius: 3px;
