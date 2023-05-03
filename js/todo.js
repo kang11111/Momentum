@@ -14,7 +14,7 @@ function saveToDos(){
 
 function deleteTodo(event){
   //클릭되는 button의 부모 요소 li를 찾아서 해당 li만 화면에서 삭제함
-  const li = event.target.parentElement;
+  const li = event.target.parentElement.parentElement;
   li.remove();
   //배열 요소들의 id 값과 클릭된 버튼의 부모 요소의 id 값이 같으면 filter
   toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
@@ -33,8 +33,12 @@ function paintTodo(newTodoObj){
   //li id에 할 일의 랜덤 값을 저장
   li.id = newTodoObj.id;
   span.innerText = newTodoObj.content;
+  
   const button = document.createElement("button");
-  button.innerText = "❌";
+  const i = document.createElement("i");
+  button.appendChild(i);
+  i.classList.add("fa-solid", "fa-xmark");
+
   li.appendChild(span);
   li.appendChild(button);
   button.addEventListener("click", deleteTodo);

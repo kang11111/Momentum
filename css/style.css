@@ -64,12 +64,19 @@ input::placeholder{
 #main-container #todo-list li button{
   font-size: 14px;
   margin-left: 10px;
-  border-radius: 1px;
-  background: transparent;
+  padding: 0 3px;
+  border-radius: 3px;
+  background: white;
+  color: black;
 }
 
 #main-container #todo-list li button:hover{
   background: black;
+  color: white;
+}
+
+#main-container #todo-list li button i{
+  font-size: 17px;
 }
 
 #quote{
