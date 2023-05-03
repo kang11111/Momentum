@@ -65,7 +65,7 @@ input::placeholder{
   font-size: 14px;
   margin-left: 10px;
   border-radius: 1px;
-  background: white;
+  background: transparent;
 }
 
 #main-container #todo-list li button:hover{
