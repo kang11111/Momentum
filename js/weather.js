@@ -12,7 +12,7 @@ function onGeoSuccess(position){
       const city = document.querySelector("#location span")
       const weatherIcon = document.querySelector("#weather img")
       const temp = document.querySelector("#weather span")
-      const weatherIconSrc = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      const weatherIconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       
       locationIcon.classList.add("fa-solid", "fa-location-dot");
       city.innerText = data.name;
