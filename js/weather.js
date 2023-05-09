@@ -8,19 +8,19 @@ function onGeoSuccess(position){
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const locationIcon = document.querySelector("#location i")
-      const city = document.querySelector("#location span")
-      const weatherIcon = document.querySelector("#weather img")
-      const temp = document.querySelector("#weather span")
-      // const weatherIconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-      const weatherIconSrc = weatherIcon.src.replace("@@icon@@",data.weather[0].icon);
+      const locationIcon = document.querySelector("#location i");
+      const city = document.querySelector("#location span");
+      const weatherIcon = document.querySelector("#weather img");
+      const temp = document.querySelector("#weather span");
+      const weatherIconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      // const weatherIconSrc = weatherIcon.src.replace("@@icon@@",data.weather[0].icon);
       
       locationIcon.classList.add("fa-solid", "fa-location-dot");
       city.innerText = data.name;
       weatherIcon.setAttribute('src', weatherIconSrc);
       temp.innerText = `${Math.floor(data.main.temp)}℃`;
     });
-}
+};
 function onGeoError(){
   alert("Can't find you. No weather for you.");
 }
