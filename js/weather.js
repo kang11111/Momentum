@@ -13,7 +13,6 @@ function onGeoSuccess(position){
       const weatherIcon = document.querySelector("#weather img");
       const temp = document.querySelector("#weather span");
       const weatherIconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-      // const weatherIconSrc = weatherIcon.src.replace("@@icon@@",data.weather[0].icon);
       
       locationIcon.classList.add("fa-solid", "fa-location-dot");
       city.innerText = data.name;
